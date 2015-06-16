@@ -1,9 +1,12 @@
 
+@import "admin/application";
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
 @import "projects";
 @import "responsive";
+@import "tickets";
+
 
 body {
   padding-top: 70px;
