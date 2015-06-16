@@ -33,6 +33,11 @@
       </div>
       <div class="collapse navbar-collapse" id="collapse">
         <ul class="nav navbar-nav">
+          <% admins_only do %>
+            <li>
+              <%= link_to "Admin", admin_root_path %>
+            </li>
+          <% end %>
           <% if user_signed_in? %>
             <div class="navbar-right">
               <p class="navbar-text">
